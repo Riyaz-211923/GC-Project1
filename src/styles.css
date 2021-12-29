@@ -1,0 +1,195 @@
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #2d3436;
+  background-image: linear-gradient(
+    315deg,
+    #2d3436 0%,
+    #000000 74%
+  ); /*
+background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #414141 74%);*/
+}
+/*HomePage styling*/
+.cont .hero img {
+  color: whitesmoke;
+  margin: 2.5rem 0;
+  border-radius: 25px;
+  height: 30rem;
+  width: 57rem;
+}
+.cont .hero img:hover {
+  transform: scale(1.05); /*
+  transition:cubic-bezier(1,1,1, 1);*/
+}
+.items {
+  color: whitesmoke;
+  text-align: left;
+  margin: 0 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.disp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*Item styling start*/
+.wrapper {
+  border: 2px solid whitesmoke;
+  background-color: white;
+  color: black;
+  margin: 1.5rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: black 0.5rem 0.5rem;
+}
+.wrapper:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.wrapper img {
+  height: 8rem;
+  widows: 8rem;
+  margin: 1rem 2.5rem;
+}
+.wrapper .item-description {
+  font-size: 1.2rem;
+  margin: 1rem 0.5rem;
+}
+.redirect {
+  display: flex;
+  align-items: center;
+}
+.redirect header {
+  padding: 0 1rem;
+}
+/*Browse page styling*/
+.browse {
+  margin: 2rem 0;
+}
+.items header {
+  margin: 0.5rem 1rem;
+}
+/*Preview page styling*/
+.preview {
+  margin: 7rem 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  color: whitesmoke;
+}
+.prev-img {
+  height: 20rem;
+  widows: 38rem;
+  margin: 0 2.5rem;
+  border-radius: 15px;
+  box-shadow: gray 0.5rem 0.5rem;
+}
+.item-info header {
+  font-size: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+.item-info p {
+  font-size: 1.25rem;
+}
+.item-info button {
+  margin: 2rem 0;
+  font-size: 1.25rem;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+.item-info button:hover {
+  transform: scale(1.05);
+  color: whitesmoke;
+  background-color: black;
+}
+/*Sell stying start*/
+.sell {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+}
+.sell-form {
+  width: 50rem;
+  font-size: 1.25rem;
+  text-align: left;
+}
+/*.sell-form input{
+  margin: 0.75rem 2rem;
+  height: 1.5rem;
+  width: 10rem;
+  border-radius:5px;
+}*/
+fieldset {
+  color: whitesmoke;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
+legend {
+  font-size: 2rem;
+  border: 2px solid whitesmoke;
+  padding: 0.75rem 0.75rem;
+  border-radius: 15px;
+  text-align: center;
+}
+textarea {
+  margin: 1rem 2rem;
+  width: 50rem;
+  height: 10rem;
+  resize: none;
+  padding: 0.75rem 0.75rem;
+  font-size: 1.25rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#number,
+#name,
+#email,
+#price,
+#item {
+  width: 50rem;
+  height: 2rem;
+  margin: 1rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-left: 0.5rem;
+}
+.sell-form h3 {
+  margin: 0 2rem;
+  font-weight: 400;
+}
+.sell-form button {
+  margin: 1rem 2rem;
+  font-size: 1.35rem;
+  border-radius: 5px;
+  padding: 0.75rem 0.75rem;
+  background-color: gray;
+  color: whitesmoke;
+}
+.sell-form button:hover {
+  transform: scale(1.05);
+}
+/*random styling*/
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+  background: silver;
+}
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
