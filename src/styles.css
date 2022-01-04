@@ -43,6 +43,22 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);*/
   align-items: center;
   flex-wrap: wrap;
 }
+.hero {
+  position: relative;
+  z-index: 0.5;
+}
+.sliders {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  position: absolute;
+  z-index: 0.5;
+  top: 50%;
+  left: 9.5%;
+}
+.sliders .fas {
+  font-size: 4rem;
+}
 /*Item styling start*/
 .wrapper {
   border: 2px solid whitesmoke;
@@ -193,3 +209,175 @@ textarea {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+/*responsive styling for home*/
+@media (max-width: 780px) {
+  .hero {
+    z-index: 0;
+  }
+  .cont .hero img {
+    color: whitesmoke;
+    margin: 2.5rem 0;
+    border-radius: 25px;
+    height: 20rem;
+    width: 38rem;
+  }
+  .sliders {
+    display: flex;
+    justify-content: space-between;
+    left: 3.75%;
+    width: 92.5%;
+    position: absolute;
+    top: 50%;
+  }
+  .sliders .fas {
+    font-size: 3rem;
+    color: whitesmoke;
+  }
+  .preview {
+    margin: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  .prev-img {
+    margin: 2.75rem 2.5rem;
+  }
+  .item-info p {
+    margin: 1rem 0;
+  }
+  /*sell style*/
+  .sell-form {
+    width: 40rem;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  textarea {
+    width: 35rem;
+    height: 10rem;
+  }
+  #number,
+  #name,
+  #email,
+  #price,
+  #item {
+    width: 35rem;
+    height: 2rem;
+    margin: 1rem 2rem;
+  }
+  .sell-form h3 {
+    margin: 0 2rem;
+    font-weight: 400;
+  }
+}
+@media (max-width: 568px) {
+  .App {
+    text-align: center;
+  }
+  .hero {
+    z-index: 0;
+  }
+  .cont .hero img {
+    color: whitesmoke;
+    margin: 2.5rem 0;
+    border-radius: 25px;
+    height: 12rem;
+    width: 22.8rem;
+  }
+  .sliders {
+    display: block;
+    justify-content: space-between;
+    left: 9%;
+    width: 80%;
+    position: absolute;
+    top: 85%;
+  }
+  .sliders .fas {
+    font-size: 2rem;
+    color: whitesmoke;
+  }
+  .items header {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  /*preview stylong start*/
+  .preview {
+    margin: 2rem 2rem;
+    flex-wrap: wrap;
+  }
+  .prev-img {
+    margin: 1.75rem 2.5rem;
+  }
+  .item-info p {
+    margin: 1rem 0;
+  }
+  .item-info {
+    text-align: center;
+  }
+  /*Form styling*/
+  .sell {
+    display: block;
+    margin: 0 2rem;
+  }
+  .sell-form {
+    width: 20rem;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  textarea {
+    width: 18rem;
+    height: 10rem;
+  }
+  #number,
+  #name,
+  #email,
+  #price,
+  #item {
+    width: 15rem;
+    height: 2rem;
+    margin: 1rem 2rem;
+  }
+  .sell-form h3 {
+    margin: 0 2rem;
+    font-weight: 400;
+  }
+}
+@media (max-width: 380px) {
+  .sell {
+    display: block;
+    margin: 0 1.5rem;
+  }
+  .sell-form {
+    width: 20rem;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  textarea {
+    width: 15rem;
+    height: 10rem;
+  }
+  #number,
+  #name,
+  #email,
+  #price,
+  #item {
+    width: 15rem;
+    height: 2rem;
+    margin: 1rem 2rem;
+  }
+  .sell-form h3 {
+    margin: 0 2rem;
+    font-weight: 400;
+  }
+  .sell legend {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 370px) {
+  .cont .hero img {
+    color: whitesmoke;
+    margin: 2.5rem 0;
+    border-radius: 25px;
+    height: 10rem;
+    width: 19rem;
+  }
+}
+/*Form styling*/

@@ -29,13 +29,13 @@ function Navbar(props) {
         </Link>
         <div className="contents">
           <Link to="/browse">
-            <a className="title" href="/browse">
+            <a className="title hide" href="/browse">
               <i class="fas fa-search"></i>
               <span>Browse</span>
             </a>
           </Link>
           <Link to="/sell">
-            <a className="title" href="/sell">
+            <a className="title hide" href="/sell">
               <i class="fas fa-dollar-sign"></i>
               <span>Sell</span>
             </a>
@@ -46,6 +46,18 @@ function Navbar(props) {
         </div>
       </div>
       <div style={{ display: cond }} id="infobar" className="infobar">
+        <Link to="/browse">
+          <a className="title hide2" href="/browse">
+            <i class="fas fa-search"></i>
+            <span onClick={toggler}>Browse</span>
+          </a>
+        </Link>
+        <Link to="/sell">
+          <a className="title hide2" href="/sell">
+            <i class="fas fa-dollar-sign"></i>
+            <span onClick={toggler}>Sell</span>
+          </a>
+        </Link>
         <i class="fas fa-user profile"></i>
         <h2 className="name">Riyaz Syed</h2>
         <h2 className="mail">211923@student.nitandhra.ac.in</h2>

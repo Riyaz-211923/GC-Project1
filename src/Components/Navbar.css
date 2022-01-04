@@ -9,6 +9,7 @@
 .container {
   position: sticky;
   top: 0;
+  z-index: 50;
 }
 .navbar {
   display: flex;
@@ -16,8 +17,8 @@
   top:0;*/
   justify-content: space-between;
   font-size: 1.25rem;
-  align-items: center;
-  /*background-color: black;
+  align-items: center; /*
+  background-color: black;
   */
   color: whitesmoke;
   height: 4.25rem;
@@ -72,6 +73,7 @@ button:hover {
 .profile {
   background-color: whitesmoke;
   margin: 3rem 0;
+  margin-right: 2.5rem;
   padding: 1rem 1rem;
   font-size: 1.5rem;
   border-radius: 25%;
@@ -97,4 +99,38 @@ button:hover {
 .infobar button:hover {
   background-color: black;
   color: whitesmoke;
+}
+.hide2 {
+  display: none;
+}
+/*Responsive styling*/
+@media (max-width: 568px) {
+  .navbar {
+    display: flex;
+    background-color: black;
+  }
+  .title {
+    font-size: 1.1rem;
+  }
+  .title:hover {
+    background-color: transparent;
+    color: white;
+  }
+  .fa-window-close {
+    font-size: 1.3rem;
+  }
+  .hide {
+    display: none;
+  }
+  .hide2 {
+    display: block;
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .infobar {
+    height: auto;
+  }
+  .profile {
+    margin-right: 0rem;
+  }
 }
